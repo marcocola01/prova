@@ -11,7 +11,7 @@ router.get('/:email', function(req, res, next) {
     console.log(poeta_trovato);
 });
 
-router.get('/web', function(req, res, next) {
+router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express', poeti: file_poeti.poeti });
 });
 
