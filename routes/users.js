@@ -36,7 +36,7 @@ router.get('/generate', function(req, res, next) {
     let data = JSON.stringify(formato);
     fs.writeFileSync('poeti.json', data);
     
-    res.send("file genrato");
+    res.send("file generato");
 });
 
 
