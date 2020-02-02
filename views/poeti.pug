@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  p Nome poeta: #{poeta.name}
+  p Nome poeta: #{poeta.card.posts[0].sentences}
+  img(src='https://americanfoodshop.it/wp-content/uploads/2018/04/coca-cola-peach.jpg')
