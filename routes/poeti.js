@@ -14,4 +14,10 @@ router.get('/api/p', function(req, res, next) {
   //res.render('index', { title: 'Express' });
 });
 
+router.get('/api/:email', function(req, res, next) {
+ let poeta_trovato = file_poeti.poeti.find(poeta => poeta.email == req.params.email);
+    res.send(poeta_trovato);
+    console.log(poeta_trovato);
+});
+
 module.exports = router;
